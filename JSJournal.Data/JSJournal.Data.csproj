@@ -54,8 +54,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artifact.cs" />
+    <Compile Include="FollowUp.cs" />
+    <Compile Include="FollowUpStatusType.cs" />
+    <Compile Include="Interview.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Lead.cs" />
+    <Compile Include="PostInterview.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusType.cs" />
+    <Compile Include="SourceType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

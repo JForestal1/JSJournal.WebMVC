@@ -1,4 +1,6 @@
 ﻿using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -28,6 +30,51 @@ namespace JSJournal.Data
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+
+        public DbSet<Lead> Leads { get; set; }
+        public DbSet<Artifact> Artifacts { get; set; }
+
+        public DbSet<FollowUp> FollowUps { get; set; }
+
+        public DbSet<FollowUpStatusType> FollowUpStatusTypes { get; set; }
+
+        public DbSet<Interview> Interviews { get; set; }
+
+        public DbSet<PostInterview> PostInterviews { get; set; }
+
+        public DbSet<SourceType> SourceTypes { get; set; }
+
+        public DbSet<StatusType> StatusTypes { get; set; }
+
+
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Conventions
+                .Remove<PluralizingTableNameConvention>();
+
+            modelBuilder
+                .Configurations
+                .Add(new IdentityUserLoginConfiguration())
+                .Add(new IdentityUserRoleConfiguration());
+        }
+    }
+
+    public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
+    {
+        public IdentityUserLoginConfiguration()
+        {
+            HasKey(iul => iul.UserId);
+        }
+    }
+
+    public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserRole>
+    {
+        public IdentityUserRoleConfiguration()
+        {
+            HasKey(iur => iur.UserId);
         }
     }
 }
