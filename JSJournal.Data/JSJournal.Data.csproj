@@ -68,6 +68,10 @@
     <Compile Include="Migrations\202104160055387_addedOwnerID.Designer.cs">
       <DependentUpon>202104160055387_addedOwnerID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104272335212_Sourcetypechanges.cs" />
+    <Compile Include="Migrations\202104272335212_Sourcetypechanges.Designer.cs">
+      <DependentUpon>202104272335212_Sourcetypechanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PostInterview.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104160055387_addedOwnerID.resx">
       <DependentUpon>202104160055387_addedOwnerID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104272335212_Sourcetypechanges.resx">
+      <DependentUpon>202104272335212_Sourcetypechanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
