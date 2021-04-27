@@ -13,7 +13,7 @@ namespace JSJournal.Data
 
         [Key]
         public int InterviewID { get; set; }
-
+        public Guid OwnerId { get; set; }
         public string PrimaryInterviwer { get; set; }
 
         public string SecondaryInterviwer { get; set; }

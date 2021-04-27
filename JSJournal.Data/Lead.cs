@@ -26,9 +26,9 @@ namespace JSJournal.Data
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
 
-        virtual public List<Interview> Interviews { get; set }
+        virtual public List<Interview> Interviews { get; set; }
 
-        virtual public List<FollowUp> FollowUps { get; set }
+        virtual public List<FollowUp> FollowUps { get; set; }
 
         [ForeignKey("ResumeUsed")]
         public int? ResumeID { get; set; }

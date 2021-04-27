@@ -11,6 +11,7 @@ namespace JSJournal.Data
     {
         [Key]
         public int PostInterviewID { get; set; }
+        public Guid OwnerId { get; set; }
         public string Notes { get; set; }
     }
 }

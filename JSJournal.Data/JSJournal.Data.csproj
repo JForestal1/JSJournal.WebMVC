@@ -60,6 +60,15 @@
     <Compile Include="Interview.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Lead.cs" />
+    <Compile Include="Migrations\202104132355225_firstmigration.cs" />
+    <Compile Include="Migrations\202104132355225_firstmigration.Designer.cs">
+      <DependentUpon>202104132355225_firstmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104160055387_addedOwnerID.cs" />
+    <Compile Include="Migrations\202104160055387_addedOwnerID.Designer.cs">
+      <DependentUpon>202104160055387_addedOwnerID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PostInterview.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatusType.cs" />
@@ -68,6 +77,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104132355225_firstmigration.resx">
+      <DependentUpon>202104132355225_firstmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104160055387_addedOwnerID.resx">
+      <DependentUpon>202104160055387_addedOwnerID.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

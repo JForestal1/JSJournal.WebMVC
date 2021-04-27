@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JSJournal.Data
+namespace JSJournal.Models
 {
-    public class FollowUpStatusType
+    public class LeadStatusEdit
     {
-        [Key]
-        public int FollowUpStatusTypeID { get; set; }
-        public Guid OwnerId { get; set; }
+        public int StatusTypeID { get; set; }
         public string Status { get; set; }
-
         public string Description { get; set; }
     }
 }

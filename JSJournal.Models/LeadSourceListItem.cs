@@ -5,17 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JSJournal.Data
+namespace JSJournal.Models
 {
-    public class SourceType
+    public class LeadSourceListItem
     {
-        [Key]
+
+        [Display(Name = "Source ID")]
         public int SourceTypeID { get; set; }
-        public Guid OwnerId { get; set; }
+        [Display(Name = "Source Name")]
         public string Source { get; set; }
 
+        [Display(Name = "Description")]
         public string Description { get; set; }
-
-
     }
 }

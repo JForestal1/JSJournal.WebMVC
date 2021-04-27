@@ -21,7 +21,7 @@ namespace JSJournal.Data
 
         [Key]
         public int ArtifactID { get; set; }
-
+        public Guid OwnerId { get; set; }
         public ArtifactTypes ArtifactType { get; set; }
 
         public string ShortLabel { get; set; }

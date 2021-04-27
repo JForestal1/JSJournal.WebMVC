@@ -12,7 +12,7 @@ namespace JSJournal.Data
     {
         [Key]
         public int FollowUpID { get; set; }
-
+        public Guid OwnerId { get; set; }
         public string ShortDescription { get; set; }
 
         [ForeignKey("Status")]

@@ -54,11 +54,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeadSourceCreate.cs" />
+    <Compile Include="LeadStatusCreate.cs" />
+    <Compile Include="LeadSourceEdit.cs" />
+    <Compile Include="LeadStatusEdit.cs" />
+    <Compile Include="LeadSourceListItem.cs" />
+    <Compile Include="LeadStatusListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JSJournal.Data\JSJournal.Data.csproj">
+      <Project>{E48436DC-DC5B-4C23-8B54-FBDB1EF89118}</Project>
+      <Name>JSJournal.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
