@@ -44,7 +44,7 @@ namespace JSJournal.Controllers
             return RedirectToAction("LeadSourceIndex");
         }
 
-        public ActionResult Edit(int id)
+        public ActionResult LeadSourceEdit(int id)
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new LeadSourceService(userId);
@@ -87,7 +87,7 @@ namespace JSJournal.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, LeadSourceEdit model)
+        public ActionResult LeadSourceEdit(int id, LeadSourceEdit model)
         {
             if (!ModelState.IsValid) return View(model);
 

@@ -54,7 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArtifactCreate.cs" />
     <Compile Include="LeadSourceCreate.cs" />
+    <Compile Include="ArtifactEdit.cs" />
+    <Compile Include="ArtifactListItem.cs" />
     <Compile Include="LeadStatusCreate.cs" />
     <Compile Include="LeadSourceEdit.cs" />
     <Compile Include="LeadStatusEdit.cs" />

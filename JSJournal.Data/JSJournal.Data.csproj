@@ -72,6 +72,10 @@
     <Compile Include="Migrations\202104272335212_Sourcetypechanges.Designer.cs">
       <DependentUpon>202104272335212_Sourcetypechanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104280017140_artifacttablechanges.cs" />
+    <Compile Include="Migrations\202104280017140_artifacttablechanges.Designer.cs">
+      <DependentUpon>202104280017140_artifacttablechanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PostInterview.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104272335212_Sourcetypechanges.resx">
       <DependentUpon>202104272335212_Sourcetypechanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104280017140_artifacttablechanges.resx">
+      <DependentUpon>202104280017140_artifacttablechanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

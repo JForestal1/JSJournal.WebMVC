@@ -37,8 +37,8 @@
         @Html.DisplayFor(modelItem => item.Description)
     </td>
     <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.SourceTypeID }) |
-        @Html.ActionLink("Delete", "Delete", new { id=item.SourceTypeID })
+        @Html.ActionLink("Edit", "LeadSourceEdit", new { id = item.SourceTypeID }) |
+        @Html.ActionLink("Delete", "LeadSourceDelete", new { id=item.SourceTypeID })
     </td>
 </tr>
 }

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<JSJournal.Models.ArtifactListItem>
+
+@{
+    ViewBag.Title = "ArtifactIndex";
+}
+
+<h2>ArtifactIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "ArtifactCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ArtifactID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShortLabel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedUtc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArtifactID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShortLabel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedUtc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedUtc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "ArtifactEdit", new { id=item.ArtifactID }) |
+            @Html.ActionLink("Delete", "ArtifactDelete", new { id=item.ArtifactID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ArtifactController.cs" />
     <Compile Include="Controllers\LeadSourceController.cs" />
     <Compile Include="Controllers\LeadStatusController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -240,10 +241,14 @@
     <Content Include="Views\LeadStatus\LeadStatusCreate.cshtml" />
     <Content Include="Views\LeadStatus\Edit.cshtml" />
     <Content Include="Views\LeadStatus\Delete.cshtml" />
-    <Content Include="Views\LeadSource\Delete.cshtml" />
-    <Content Include="Views\LeadSource\Edit.cshtml" />
+    <Content Include="Views\LeadSource\LeadSourceDelete.cshtml" />
+    <Content Include="Views\LeadSource\LeadSourceEdit.cshtml" />
     <Content Include="Views\LeadSource\LeadSourceCreate.cshtml" />
     <Content Include="Views\LeadSource\LeadSourceIndex.cshtml" />
+    <Content Include="Views\Artifact\ArtifactIndex.cshtml" />
+    <Content Include="Views\Artifact\ArtifactCreate.cshtml" />
+    <Content Include="Views\Artifact\ArtifactEdit.cshtml" />
+    <Content Include="Views\Artifact\ArtifactDelete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -4,30 +4,25 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static JSJournal.Data.Artifact;
 
-namespace JSJournal.Data
+namespace JSJournal.Models
 {
-    public class Artifact
+    public class ArtifactEdit
     {
-        public enum ArtifactTypes
-        {
-            CoverLetter=1,
-            Resume,
-            WorkExample,
-            Portfolio,
-            ReferralLetter,
-            Other
-        }
-
-        [Key]
+        [Display(Name = "Artifact ID")]
         public int ArtifactID { get; set; }
-        public Guid OwnerId { get; set; }
+
+        [Display(Name = "Artifact Type")]
         public ArtifactTypes ArtifactType { get; set; }
 
+        [Display(Name = "Label")]
         public string ShortLabel { get; set; }
 
+        [Display(Name = "Description")]
         public string Description { get; set; }
 
+        [Display(Name = "Link")]
         public string Link { get; set; }
 
         [Display(Name = "Date and Time Created")]

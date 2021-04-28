@@ -24,7 +24,8 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Manage Status Types ", "LeadStatusIndex", "LeadStatus")</li>
+                        <li>@Html.ActionLink("Manage Artifacts", "ArtifactIndex", "Artifact")</li>
+                        <li>@Html.ActionLink("Manage Status Types", "LeadStatusIndex", "LeadStatus")</li>
                         <li>@Html.ActionLink("Manage Sources", "LeadSourceIndex", "LeadSource")</li>
                     }
                     <li>@Html.ActionLink("About", "About", "Home")</li>
