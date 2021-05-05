@@ -21,7 +21,7 @@ namespace JSJournal.Models
         public string SecondaryInterviewer { get; set; }
 
         [Display(Name = "Address")]
-        public int Address { get; set; }
+        public string Address { get; set; }
 
         [Display(Name = "Interviewer Link")]
         public string InterviewerLink { get; set; }

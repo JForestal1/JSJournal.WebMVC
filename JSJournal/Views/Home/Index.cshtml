@@ -2,30 +2,35 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Working With Leads</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            This application is intended to aid in the management of job leads. Leads come from a variety of formal and informal sources. Most leads will require the submission of a resume or similair artifcats.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        @Html.ActionLink("Manage Leads", "LeadIndex", "Lead", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Working With Artifacts</h2>
+        <p>In addition to resumes, a job seeker may find that many verions of resumes, portfolios, reference letters and similar materials are required. This application aids in the tracking of materials. </p>
+        @Html.ActionLink("Manage Artifacts", "ArtifactIndex", "Artifact", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Working With Follow-Ups</h2>
+        <p>Leads often require in follow-ups. This might be a thank you letter, a reminder call to a networking associate or similair actibity This application helps manage these activities.  </p>
+        @Html.ActionLink("Manage Follow-Ups", "FollowUpIndex", "FollowUp", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    <div class="col-md-4">
+        <h2>Working With Interviews</h2>
+        <p>Ideally leads develop to the point wehre interviews occur. This application allows you to log and track interview activity. </p>
+        @Html.ActionLink("Manage Interviews", "InterviewIndex", "Interview", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    <div class="col-md-4">
+        <h2>Working With Status Codes</h2>
+        <p>This application allows you configure custom status and source codes so that you can most effectivly track Leads and follow-ups using status and sourcevalues that make sense to you.</p>
+        @Html.ActionLink("Manage Lead Status Codes", "LeadStatusIndex", "LeadStatus", null, new { @class = "btn btn-primary btn-large" })
+        @Html.ActionLink("Manage Follow-up Status Codes", "FollowUpStatusIndex", "FollowUpStatus", null, new { @class = "btn btn-primary btn-large" })
+        @Html.ActionLink("Manage Lead Sources", "LeadSourceIndex", "LeadSource", null, new { @class = "btn btn-primary btn-large" })
+
     </div>
 </div>

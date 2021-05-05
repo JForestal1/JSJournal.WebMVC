@@ -61,8 +61,7 @@ namespace JSJournal.Services
                                     Source = e.Source.Source,
                                     JobDescriptionLink = e.JobDescriptionLink,
                                     FollowUpCount = e.FollowUps.Count(),
-                                    //Interviews and follow-ups
-
+                                    InterviewCount = e.Interviews.Count(),
                                     ResumeUsed = e.ResumeUsed.ShortLabel,
                                     CoverUsed = e.CoverUsed.ShortLabel,
                                     OtherArtifactUsed = e.OtherArtifactUsed.ShortLabel,
@@ -91,6 +90,7 @@ namespace JSJournal.Services
                         Company = entity.Company,
                         Role = entity.Role,
                         FollowUpCount = entity.FollowUps.Count(),
+                        InterviewCount = entity.Interviews.Count(),
                         SourceID = entity.SourceID,
                         StatusID = entity.StatusID,
                         JobDescriptionLink = entity.JobDescriptionLink,

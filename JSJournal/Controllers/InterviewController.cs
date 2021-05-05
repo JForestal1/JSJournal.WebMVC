@@ -53,6 +53,7 @@ namespace JSJournal.Controllers
             var model =
                 new InterviewEdit
                 {
+                    InterviewID = detail.InterviewID,
                     LeadID = detail.LeadID,
                     PrimaryInterviewer = detail.PrimaryInterviewer,
                     SecondaryInterviewer = detail.SecondaryInterviewer,

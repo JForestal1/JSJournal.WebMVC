@@ -111,11 +111,11 @@ namespace JSJournal.Services
                         .FollowUps
                         .Single(e => e.FollowUpID == model.FollowUpID && e.OwnerId == _userId);
 
-                entity.ShortDescription = entity.ShortDescription;
-                entity.FollowUpStatusID = entity.FollowUpStatusID;
-                entity.Notes = entity.Notes;
-                entity.ModifiedUtc = entity.ModifiedUtc;
-                entity.DueUtc = (DateTimeOffset)entity.DueUtc;
+                entity.ShortDescription = model.ShortDescription;
+                entity.FollowUpStatusID = model.FollowUpStatusID;
+                entity.Notes = model.Notes;
+                entity.ModifiedUtc = model.ModifiedUtc;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
 
                 return ctx.SaveChanges() == 1;

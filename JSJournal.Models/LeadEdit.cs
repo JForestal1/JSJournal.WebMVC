@@ -32,6 +32,9 @@ namespace JSJournal.Models
         [Display(Name = "Follow-up Count")]
         public int FollowUpCount { get; set; }
 
+        [Display(Name = "Interview Count")]
+        public int InterviewCount { get; set; }
+
         [Display(Name = "Resume Used")]
         public int? ResumeID { get; set; }
 

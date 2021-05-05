@@ -4,7 +4,7 @@
     ViewBag.Title = "LeadIndex";
 }
 
-<h2>LeadIndex</h2>
+<h2>All Leads</h2>
 
 <p>
     @Html.ActionLink("Create New", "LeadCreate")
@@ -31,6 +31,9 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.FollowUpCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewCount)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ResumeUsed)
@@ -73,6 +76,10 @@
     <td>
         @Html.DisplayFor(modelItem => item.FollowUpCount)
     </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.InterviewCount)
+    </td>
     <td>
         @Html.DisplayFor(modelItem => item.ResumeUsed)
     </td>
@@ -91,7 +98,7 @@
     <td>
         @Html.ActionLink("Edit", "LeadEdit", new { id = item.LeadID }) |
         @Html.ActionLink("Create Follow-up", "FollowUpCreate") |
-        @Html.ActionLink("Create Interview", "FollowUpCreate") |
+        @Html.ActionLink("Create Interview", "InterviewCreate", "Interview") |
         @Html.ActionLink("Delete", "LeadDelete", new { id = item.LeadID })
     </td>
 </tr>

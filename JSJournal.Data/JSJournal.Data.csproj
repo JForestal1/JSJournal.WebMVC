@@ -63,33 +63,9 @@
     <Compile Include="Interview.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Lead.cs" />
-    <Compile Include="Migrations\202104132355225_firstmigration.cs" />
-    <Compile Include="Migrations\202104132355225_firstmigration.Designer.cs">
-      <DependentUpon>202104132355225_firstmigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104160055387_addedOwnerID.cs" />
-    <Compile Include="Migrations\202104160055387_addedOwnerID.Designer.cs">
-      <DependentUpon>202104160055387_addedOwnerID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104272335212_Sourcetypechanges.cs" />
-    <Compile Include="Migrations\202104272335212_Sourcetypechanges.Designer.cs">
-      <DependentUpon>202104272335212_Sourcetypechanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104280017140_artifacttablechanges.cs" />
-    <Compile Include="Migrations\202104280017140_artifacttablechanges.Designer.cs">
-      <DependentUpon>202104280017140_artifacttablechanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104280134380_changedguidcolumnlabeltoOwnerID.cs" />
-    <Compile Include="Migrations\202104280134380_changedguidcolumnlabeltoOwnerID.Designer.cs">
-      <DependentUpon>202104280134380_changedguidcolumnlabeltoOwnerID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104280153217_tweakstoLead.cs" />
-    <Compile Include="Migrations\202104280153217_tweakstoLead.Designer.cs">
-      <DependentUpon>202104280153217_tweakstoLead.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104300102254_AddedCompanyToLead.cs" />
-    <Compile Include="Migrations\202104300102254_AddedCompanyToLead.designer.cs">
-      <DependentUpon>202104300102254_AddedCompanyToLead.cs</DependentUpon>
+    <Compile Include="Migrations\202105050015372_RefinedInterviews.cs" />
+    <Compile Include="Migrations\202105050015372_RefinedInterviews.designer.cs">
+      <DependentUpon>202105050015372_RefinedInterviews.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,26 +77,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104132355225_firstmigration.resx">
-      <DependentUpon>202104132355225_firstmigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104160055387_addedOwnerID.resx">
-      <DependentUpon>202104160055387_addedOwnerID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104272335212_Sourcetypechanges.resx">
-      <DependentUpon>202104272335212_Sourcetypechanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104280017140_artifacttablechanges.resx">
-      <DependentUpon>202104280017140_artifacttablechanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104280134380_changedguidcolumnlabeltoOwnerID.resx">
-      <DependentUpon>202104280134380_changedguidcolumnlabeltoOwnerID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104280153217_tweakstoLead.resx">
-      <DependentUpon>202104280153217_tweakstoLead.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104300102254_AddedCompanyToLead.resx">
-      <DependentUpon>202104300102254_AddedCompanyToLead.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105050015372_RefinedInterviews.resx">
+      <DependentUpon>202105050015372_RefinedInterviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
