@@ -13,10 +13,15 @@ namespace JSJournal.Data
 
         [Key]
         public int InterviewID { get; set; }
-        public Guid OwnerId { get; set; }
-        public string PrimaryInterviwer { get; set; }
+        public Guid OwnerID { get; set; }
 
-        public string SecondaryInterviwer { get; set; }
+        [ForeignKey("Lead")]
+        public int LeadID { get; set; }
+        public virtual Lead Lead { get; set; }
+
+        public string PrimaryInterviewer { get; set; }
+
+        public string SecondaryInterviewer { get; set; }
 
         public DateTimeOffset InterviewTimeDateUtc { get; set; }
 
@@ -25,11 +30,6 @@ namespace JSJournal.Data
         public string InterviewerLink { get; set; }
 
         public string Notes { get; set; }
-
-        [ForeignKey("InterviewNotes")]
-        public int? PostInterviewID { get; set; }
-
-        public virtual PostInterview InterviewNotes { get; set; }
 
     }
 }

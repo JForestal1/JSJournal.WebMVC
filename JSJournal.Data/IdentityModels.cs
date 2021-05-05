@@ -41,8 +41,6 @@ namespace JSJournal.Data
 
         public DbSet<Interview> Interviews { get; set; }
 
-        public DbSet<PostInterview> PostInterviews { get; set; }
-
         public DbSet<SourceType> SourceTypes { get; set; }
 
         public DbSet<StatusType> StatusTypes { get; set; }

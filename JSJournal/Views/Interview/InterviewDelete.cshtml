@@ -1,0 +1,88 @@
+﻿@model JSJournal.Models.InterviewEdit
+
+@{
+    ViewBag.Title = "InterviewDelete";
+}
+
+<h2>InterviewDelete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>InterviewEdit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InterviewID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterviewID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeadID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryInterviewer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryInterviewer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryInterviewer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryInterviewer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InterviewerLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterviewerLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InterviewTimeDateUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterviewTimeDateUtc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

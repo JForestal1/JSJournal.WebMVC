@@ -13,6 +13,12 @@ namespace JSJournal.Data
         [Key]
         public int FollowUpID { get; set; }
         public Guid OwnerId { get; set; }
+
+        [ForeignKey("Lead")]
+        public int LeadID { get; set; }
+        public virtual Lead Lead { get; set; }
+
+
         public string ShortDescription { get; set; }
 
         [ForeignKey("Status")]
@@ -23,7 +29,7 @@ namespace JSJournal.Data
 
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
-        public DateTimeOffset DueUtc { get; set; }
+        public DateTimeOffset? DueUtc { get; set; }
 
     }
 }

@@ -16,6 +16,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Job Seeker Journal", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
@@ -24,6 +26,8 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
+                        <li>@Html.ActionLink("Manage Lead", "LeadIndex", "Lead")</li>
+                        <li>@Html.ActionLink("Manage Follow-Ups", "FollowUpIndex", "FollowUp")</li>
                         <li>@Html.ActionLink("Manage Artifacts", "ArtifactIndex", "Artifact")</li>
                         <li>@Html.ActionLink("Manage Status Types", "LeadStatusIndex", "LeadStatus")</li>
                         <li>@Html.ActionLink("Manage Sources", "LeadSourceIndex", "LeadSource")</li>

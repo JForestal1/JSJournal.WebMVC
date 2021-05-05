@@ -1,0 +1,100 @@
+﻿@model IEnumerable<JSJournal.Models.LeadListItem>
+
+@{
+    ViewBag.Title = "LeadIndex";
+}
+
+<h2>LeadIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "LeadCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LeadID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Role)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Source)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobDescriptionLink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FollowUpCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResumeUsed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CoverUsed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherArtifactUsed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedUtc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.LeadID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Company)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Role)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Source)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.JobDescriptionLink)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FollowUpCount)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ResumeUsed)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CoverUsed)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OtherArtifactUsed)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CreatedUtc)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ModifiedUtc)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "LeadEdit", new { id = item.LeadID }) |
+        @Html.ActionLink("Create Follow-up", "FollowUpCreate") |
+        @Html.ActionLink("Create Interview", "FollowUpCreate") |
+        @Html.ActionLink("Delete", "LeadDelete", new { id = item.LeadID })
+    </td>
+</tr>
+}
+
+</table>

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<JSJournal.Models.InterviewListItem>
+
+@{
+    ViewBag.Title = "InterviewIndex";
+}
+
+<h2>InterviewIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeadID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimaryInterviewer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondaryInterviewer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewerLink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewTimeDateUtc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterviewID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeadID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimaryInterviewer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondaryInterviewer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterviewerLink)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterviewTimeDateUtc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

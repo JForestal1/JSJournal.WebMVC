@@ -12,7 +12,11 @@ namespace JSJournal.Data
     {
         [Key]
         public int LeadID { get; set; }
-        public Guid guid { get; set; }
+        public Guid OwnerID { get; set; }
+
+        public string Role { get; set; }
+
+        public string Company { get; set; }
 
         [ForeignKey("Status")]
         public int StatusID { get; set; }

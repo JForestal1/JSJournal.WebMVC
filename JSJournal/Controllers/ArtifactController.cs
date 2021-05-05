@@ -39,7 +39,7 @@ namespace JSJournal.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new ArtifactService(userId);
 
-            service.CreateSource(model);
+            service.CreateArtifact(model);
 
             return RedirectToAction("ArtifactIndex");
         }

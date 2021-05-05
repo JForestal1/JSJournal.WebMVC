@@ -18,7 +18,7 @@ namespace JSJournal.Services
         }
 
 
-        public bool CreateSource(ArtifactCreate model)
+        public bool CreateArtifact(ArtifactCreate model)
         {
             var entity =
                 new Artifact()

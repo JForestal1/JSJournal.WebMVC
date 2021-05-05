@@ -1,0 +1,46 @@
+﻿@model IEnumerable<JSJournal.Models.FollowUpStatusListItem>
+
+@{
+    ViewBag.Title = "FollowUpStatusIndex";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "FollowUpStatusCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FollowUpStatusTypeID)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.FollowUpStatusTypeID)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Description)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "FollowUpStatusEdit", new { id = item.FollowUpStatusTypeID }) |
+        @Html.ActionLink("Delete", "FollowUpStatusDelete", new { id=item.FollowUpStatusTypeID })
+    </td>
+</tr>
+}
+
+</table>
