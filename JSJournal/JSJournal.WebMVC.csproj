@@ -374,7 +374,6 @@
     <Content Include="Views\Lead\LeadDelete.cshtml" />
     <Content Include="Views\FollowUp\FollowUpIndex.cshtml" />
     <Content Include="Views\FollowUp\FollowUpCreate.cshtml" />
-    <Content Include="Views\Lead\FollowUpCreate.cshtml" />
     <Content Include="Views\Interview\InterviewIndex.cshtml" />
     <Content Include="Views\Interview\InterviewCreate.cshtml" />
     <Content Include="Views\Interview\InterviewDelete.cshtml" />

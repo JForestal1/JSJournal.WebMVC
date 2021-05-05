@@ -27,11 +27,6 @@ namespace JSJournal.Controllers
             return View();
         }
 
-        public ActionResult FollowUpCreate(int leadID)
-        {
-            return View();
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult FollowUpCreate(FollowUpCreate model)
